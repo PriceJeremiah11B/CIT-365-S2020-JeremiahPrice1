@@ -11,6 +11,10 @@ namespace ConsoleApp1
 
             Console.WriteLine("My name is " + message + ", and I am from " + message1);
             Console.ReadLine();
+
+            DateTime date1 = new DateTime(2020, 12, 25);
+            DateTime date2 = DateTime.Today;
+            int daysDiff = ((TimeSpan)(date2 - date1)).Days;
         }
 
         private static void GlazerApp()
