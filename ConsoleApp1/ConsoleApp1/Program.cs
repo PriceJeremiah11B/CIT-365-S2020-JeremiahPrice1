@@ -9,16 +9,21 @@ namespace ConsoleApp1
             String message = "Jeremiah";
             String message1 = "Idaho";
 
-            double width, height, woodLength, glassArea;
+            Console.WriteLine("My name is " + message + ", and I am from " + message1);
+            Console.ReadLine();
+        }
 
-            double Jeremiah, Idaho;
-
+        private static void GlazerApp()
+        {
             string widthString, heightString;
 
             string Jeremiahstring, IdahoString;
 
+            Console.WriteLine("Type the width (feet): ");
             widthString = Console.ReadLine();
             width = double.Parse(widthString);
+
+            Console.WriteLine("Type the height (meters): ");
             heightString = Console.ReadLine();
             height = double.Parse(heightString);
 
@@ -27,8 +32,7 @@ namespace ConsoleApp1
 
             Console.WriteLine("The length of the wood is " + woodLength + " feet");
             Console.WriteLine("The area of the glass is " + glassArea + " square metres");
-
-            Console.WriteLine("My name is " + message + ", and I am from " + message1);
+            Console.ReadLine();
         }
     }
 }
